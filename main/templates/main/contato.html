@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="{% static 'css/all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/animate.compat.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+
+    <!-- JS -->
+    <script defer src="{% static 'js/scripts.js' %}"></script>
+
+    <title>Contato - GDAW</title>
+</head>
+
+<body>
+    <section id="sec-0" class="page-header">
+        <header class="top">
+            <div class="container">
+                <p>935782916/951927798</p>
+                <p>info@g-daw.com</p>
+                <p>Seg-Sáb 9:00-19:00</p>
+                <div class="social">
+                    <a href="#" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><img src="{% static 'Images/youtube-logotype.png' %}" alt=""></i></a>
+                </div>
+            </div>
+        </header>
+        <header>
+            <div class="hide" id="searchBar">
+                <input type="search" name="searchBox" id="searchBox" placeholder="Digite sua busca aqui...    Pressione [Esc] para sair">
+            </div>
+            <div class="container">  
+                <h1>
+                    <span>GD</span>AW 
+                    <p>Serviços e Soluções LDA</p>
+                </h1>
+                <label for="menu"><i class="fas fa-bars"></i></label>
+                <input type="checkbox" id="menu">
+                <nav>
+                    <a href="{% url 'inicio' %}">Início</a>
+                    <a href="{% url 'sobre' %}">Sobre Nós</a>
+                    <a href="{% url 'servicos' %}" class="active">Serviços</a>
+                    <a href="{% url 'portfolio' %}">Portfólio</a>
+                    <a href="{% url 'projetos' %}">Projetos</a>
+                    <a href="{% url 'contato' %}">Contato</a>
+                    <i class="fa-solid fa-magnifying-glass" id="search"></i>
+                </nav>
+            </div>
+        </header>
+        <article class="page-title">
+            <div class="container">
+                <h1>Entre em Contato</h1>
+                <p>Estamos prontos para atender às suas necessidades</p>
+            </div>
+        </article>
+    </section>
+
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2>Informações de Contato</h2>
+                    <p class="lead">Entre em contato conosco para solicitar orçamentos, tirar dúvidas ou agendar uma visita técnica.</p>
+                    
+                    <div class="contact-info mt-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-map-marker-alt fa-2x mr-3" style="width: 40px;"></i>
+                            <div>
+                                <h4>Endereço</h4>
+                                <p>Luanda, Angola</p>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-phone fa-2x mr-3" style="width: 40px;"></i>
+                            <div>
+                                <h4>Telefone</h4>
+                                <p>935782916 / 951927798</p>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-envelope fa-2x mr-3" style="width: 40px;"></i>
+                            <div>
+                                <h4>E-mail</h4>
+                                <p>info@g-daw.com / geral@g-daw.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-clock fa-2x mr-3" style="width: 40px;"></i>
+                            <div>
+                                <h4>Horário de Funcionamento</h4>
+                                <p>Segunda a Sábado: 9:00 às 19:00</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-contact mt-4">
+                        <h4>Siga-nos nas Redes Sociais</h4>
+                        <div class="social-icons">
+                            <a href="#" class="mr-3"><i class="fab fa-facebook-f fa-2x"></i></a>
+                            <a href="#" class="mr-3"><i class="fab fa-instagram fa-2x"></i></a>
+                            <a href="#" class="mr-3"><i class="fab fa-linkedin-in fa-2x"></i></a>
+                            <a href="#" class="mr-3"><i class="fab fa-twitter fa-2x"></i></a>
+                            <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 mt-4 mt-lg-0">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <h3 class="card-title text-center mb-4">Envie-nos uma Mensagem</h3>
+                            <form id="contact-form" action="" method="post">
+                                <div class="form-group">
+                                    <label for="name">Nome Completo</label>
+                                    <input type="text" class="form-control" id="name" name="name" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="email">E-mail</label>
+                                    <input type="email" class="form-control" id="email" name="email" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="phone">Telefone</label>
+                                    <input type="tel" class="form-control" id="phone" name="phone">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="subject">Assunto</label>
+                                    <input type="text" class="form-control" id="subject" name="subject" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="message">Mensagem</label>
+                                    <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                                </div>
+                                
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-primary btn-lg mt-3">Enviar Mensagem</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="map" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Nossa Localização</h2>
+            <div class="map-container">
+                <!-- Placeholder para o mapa -->
+                <div class="embed-responsive embed-responsive-16by9">
+                    <div class="embed-responsive-item bg-secondary d-flex align-items-center justify-content-center">
+                        <p class="text-white">Mapa de Localização - GDAW Serviços e Soluções LDA</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sec-6">
+        <div class="container">
+            <div class="about">
+                <h1>Sobre a Empresa</h1>
+                <h2>
+                    GDAW 
+                    <p>Serviços e Soluções LDA</p>
+                </h2>
+                <p>A GDAW é uma empresa angolana que atua no setor de construção civil e prestação de serviços gerais, comprometida com a excelência, inovação e sustentabilidade em todos os projetos que realizamos.</p>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>  
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube-square"></i></a>
+            </div>
+            <div class="links">
+                <h1>Links Úteis</h1>
+                <a href="#">Nossos Serviços</a>
+                <a href="#">Nossa Equipe</a>
+                <a href="#">Projetos</a>
+                <a href="#">Centro de Suporte</a>
+                <a href="#">Contato</a>
+                <a href="#">Política de Privacidade</a>
+                <a href="#">Termos de Uso</a>
+                <a href="#">Mapa do Site</a>
+            </div>
+            <div class="posts">
+                <h1>Últimas Publicações</h1>
+                <a href="#"><span>15<br>ABR</span>Inauguração de novo projeto residencial em Luanda</a>
+                <a href="#"><span>10<br>ABR</span>GDAW implementa práticas sustentáveis em novos projetos</a>
+                <a href="#"><span>05<br>ABR</span>Como escolher os melhores materiais para sua construção</a>
+                <a href="#"><span>01<br>ABR</span>Expansão dos serviços da GDAW para novas regiões</a>
+                <a href="#"><span>25<br>MAR</span>Tendências de arquitetura sustentável para 2025</a>
+            </div>
+            <div class="contact">
+                <h1>Contate-nos</h1>
+                <p>Luanda, Angola</p>
+                <p>info@g-daw.com / geral@g-daw.com</p>
+                <p>935782916<br>951927798</p>
+            </div>
+        </div>
+    </section>
+    <section id="sec-7">
+        <div class="container">
+            <p>Copyright @2025 | Desenvolvido por <span>GDAW Serviços e Soluções LDA</span></p>
+        </div>
+    </section>
+
+    <script src="{% static 'js/wow.min.js' %}"></script>
+    <script> new WOW().init();</script>
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+</body>
+</html>

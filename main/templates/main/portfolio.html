@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="{% static 'css/all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/animate.compat.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+
+    <!-- JS -->
+    <script defer src="{% static 'js/scripts.js' %}"></script>
+
+    <title>Portfólio - GDAW</title>
+</head>
+
+<body>
+    <section id="sec-0" class="page-header">
+        <header class="top">
+            <div class="container">
+                <p>935782916/951927798</p>
+                <p>info@g-daw.com</p>
+                <p>Seg-Sáb 9:00-19:00</p>
+                <div class="social">
+                    <a href="#" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><img src="{% static 'Images/youtube-logotype.png' %}" alt=""></i></a>
+                </div>
+            </div>
+        </header>
+        <header>
+            <div class="hide" id="searchBar">
+                <input type="search" name="searchBox" id="searchBox" placeholder="Digite sua busca aqui...    Pressione [Esc] para sair">
+            </div>
+            <div class="container">  
+                <h1>
+                    <span>GD</span>AW 
+                    <p>Serviços e Soluções LDA</p>
+                </h1>
+                <label for="menu"><i class="fas fa-bars"></i></label>
+                <input type="checkbox" id="menu">
+                <nav>
+                    <a href="{% url 'inicio' %}">Início</a>
+                    <a href="{% url 'sobre' %}">Sobre Nós</a>
+                    <a href="{% url 'servicos' %}" class="active">Serviços</a>
+                    <a href="{% url 'portfolio' %}">Portfólio</a>
+                    <a href="{% url 'projetos' %}">Projetos</a>
+                    <a href="{% url 'contato' %}">Contato</a>
+                    <i class="fa-solid fa-magnifying-glass" id="search"></i>
+                </nav>
+            </div>
+        </header>
+        <article class="page-title">
+            <div class="container">
+                <h1>Nosso Portfólio</h1>
+                <p>Conheça nossos trabalhos e realizações</p>
+            </div>
+        </article>
+    </section>
+
+    <section id="portfolio-gallery" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2>Trabalhos Realizados</h2>
+                <p class="lead">Conheça alguns dos nossos principais projetos. Na GDAW, cada obra é executada com dedicação e excelência técnica, refletindo nosso compromisso com a qualidade e a satisfação do cliente.</p>
+            </div>
+
+            <div class="filter mb-4">
+                <a href="#" class="active">Todos</a>
+                <a href="#">Construções</a>
+                <a href="#">Design de Interiores</a>
+                <a href="#">Isolamento</a>
+                <a href="#">Instalações</a>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="portfolio-item wow animated fadeIn">
+                        <img src="{% static 'Images/gallery1.jpg' %}" alt="Projeto Residencial" class="img-fluid">
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <h3>Complexo Residencial</h3>
+                                <p>Construção | Luanda</p>
+                                <a href="#" class="btn btn-outline-light">Ver Detalhes</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="portfolio-item wow animated fadeIn delay-1s">
+                        <img src="{% static 'Images/gallery2.jpg' %}" alt="Design de Interiores" class="img-fluid">
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <h3>Design de Interiores</h3>
+                                <p>Design | Escritório Corporativo</p>
+                                <a href="#" class="btn btn-outline-light">Ver Detalhes</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="portfolio-item wow animated fadeIn delay-2s">
+                        <img src="{% static 'Images/gallery3.jpg' %}" alt="Edifício Comercial" class="img-fluid">
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <h3>Edifício Comercial</h3>
+                                <p>Construção | Centro Empresarial</p>
+                                <a href="#" class="btn btn-outline-light">Ver Detalhes</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="portfolio-item wow animated fadeIn">
+                        <img src="{% static 'Images/gallery4.jpg' %}" alt="Sistemas Elétricos" class="img-fluid">
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <h3>Instalações Elétricas</h3>
+                                <p>Instalações | Prédio Comercial</p>
+                                <a href="#" class="btn btn-outline-light">Ver Detalhes</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="portfolio-item wow animated fadeIn delay-1s">
+                        <img src="{% static 'Images/gallery5.jpg' %}" alt="Reforma Residencial" class="img-fluid">
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <h3>Reforma Residencial</h3>
+                                <p>Reforma | Condomínio de Luxo</p>
+                                <a href="#" class="btn btn-outline-light">Ver Detalhes</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="portfolio-item wow animated fadeIn delay-2s">
+                        <img src="{% static 'Images/card1.jpg' %}" alt="Gestão de Construção" class="img-fluid">
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <h3>Gestão de Projeto</h3>
+                                <p>Gerenciamento | Empreendimento Misto</p>
+                                <a href="#" class="btn btn-outline-light">Ver Detalhes</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="portfolio-item wow animated fadeIn">
+                        <img src="{% static 'Images/card2.jpg' %}" alt="Reforma Comercial" class="img-fluid">
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <h3>Reforma Comercial</h3>
+                                <p>Reforma | Loja de Departamentos</p>
+                                <a href="#" class="btn btn-outline-light">Ver Detalhes</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="portfolio-item wow animated fadeIn delay-1s">
+                        <img src="{% static 'Images/card3.jpg' %}" alt="Projeto Arquitetônico" class="img-fluid">
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <h3>Projeto Arquitetônico</h3>
+                                <p>Arquitetura | Centro Cultural</p>
+                                <a href="#" class="btn btn-outline-light">Ver Detalhes</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="portfolio-item wow animated fadeIn delay-2s">
+                        <img src="{% static 'Images/gallery1.jpg' %}" alt="Isolamento Térmico" class="img-fluid">
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <h3>Isolamento Térmico</h3>
+                                <p>Isolamento | Edifício Sustentável</p>
+                                <a href="#" class="btn btn-outline-light">Ver Detalhes</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-4">
+                <a href="#" class="btn btn-primary btn-lg">Carregar Mais Projetos</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonial" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2>O Que Nossos Clientes Dizem</h2>
+                <p class="lead">Descubra por que nossos clientes confiam na GDAW para seus projetos de construção e serviços gerais</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow">
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <i class="fas fa-quote-left fa-2x text-primary"></i>
+                            </div>
+                            <p class="card-text">A equipe da GDAW superou todas as nossas expectativas. O projeto foi entregue no prazo, dentro do orçamento e com um acabamento impecável. A comunicação durante todo o processo foi excelente.</p>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <div class="d-flex align-items-center">
+                                <img src="{% static 'Images/cust1.png' %}" alt="Cliente" class="rounded-circle mr-3" style="width: 60px;">
+                                <div>
+                                    <h5 class="mb-0">Carlos Santos</h5>
+                                    <p class="text-muted mb-0">Diretor, TechCorp Angola</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow">
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <i class="fas fa-quote-left fa-2x text-primary"></i>
+                            </div>
+                            <p class="card-text">Contratamos a GDAW para a reforma completa do nosso escritório, e o resultado foi extraordinário. A atenção aos detalhes e o compromisso com a qualidade são evidentes em cada aspecto do trabalho.</p>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <div class="d-flex align-items-center">
+                                <img src="{% static 'Images/cust1.png' %}" alt="Cliente" class="rounded-circle mr-3" style="width: 60px;">
+                                <div>
+                                    <h5 class="mb-0">Maria Fernandes</h5>
+                                    <p class="text-muted mb-0">Gerente, Luanda Retail</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow">
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <i class="fas fa-quote-left fa-2x text-primary"></i>
+                            </div>
+                            <p class="card-text">A abordagem inovadora e sustentável da GDAW fez toda a diferença em nosso projeto de construção. Sua equipe demonstrou profissionalismo excepcional e uma verdadeira paixão pelo trabalho.</p>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <div class="d-flex align-items-center">
+                                <img src="{% static 'Images/cust1.png' %}" alt="Cliente" class="rounded-circle mr-3" style="width: 60px;">
+                                <div>
+                                    <h5 class="mb-0">Pedro Oliveira</h5>
+                                    <p class="text-muted mb-0">Proprietário, Residencial Vista Mar</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sec-6">
+        <div class="container">
+            <div class="about">
+                <h1>Sobre a Empresa</h1>
+                <h2>
+                    GDAW 
+                    <p>Serviços e Soluções LDA</p>
+                </h2>
+                <p>A GDAW é uma empresa angolana que atua no setor de construção civil e prestação de serviços gerais, comprometida com a excelência, inovação e sustentabilidade em todos os projetos que realizamos.</p>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>  
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube-square"></i></a>
+            </div>
+            <div class="links">
+                <h1>Links Úteis</h1>
+                <a href="#">Nossos Serviços</a>
+                <a href="#">Nossa Equipe</a>
+                <a href="#">Projetos</a>
+                <a href="#">Centro de Suporte</a>
+                <a href="#">Contato</a>
+                <a href="#">Política de Privacidade</a>
+                <a href="#">Termos de Uso</a>
+                <a href="#">Mapa do Site</a>
+            </div>
+            <div class="posts">
+                <h1>Últimas Publicações</h1>
+                <a href="#"><span>15<br>ABR</span>Inauguração de novo projeto residencial em Luanda</a>
+                <a href="#"><span>10<br>ABR</span>GDAW implementa práticas sustentáveis em novos projetos</a>
+                <a href="#"><span>05<br>ABR</span>Como escolher os melhores materiais para sua construção</a>
+                <a href="#"><span>01<br>ABR</span>Expansão dos serviços da GDAW para novas regiões</a>
+                <a href="#"><span>25<br>MAR</span>Tendências de arquitetura sustentável para 2025</a>
+            </div>
+            <div class="contact">
+                <h1>Contate-nos</h1>
+                <p>Luanda, Angola</p>
+                <p>info@g-daw.com / geral@g-daw.com</p>
+                <p>935782916<br>951927798</p>
+            </div>
+        </div>
+    </section>
+    <section id="sec-7">
+        <div class="container">
+            <p>Copyright @2025 | Desenvolvido por <span>GDAW Serviços e Soluções LDA</span></p>
+        </div>
+    </section>
+
+    <script src="{% static 'js/wow.min.js' %}"></script>
+    <script> new WOW().init();</script>
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+</body>
+</html>

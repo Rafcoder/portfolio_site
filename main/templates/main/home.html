@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="{% static 'css/all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/animate.compat.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+
+    <!-- JS -->
+    <script defer src="{% static 'js/scripts.js' %}"></script>
+
+    <title>GDAW - Serviços e Soluções</title>
+</head>
+
+<body>
+    <!-- Seção Superior com Informações de Contato -->
+    <section id="sec-0">
+        <header class="top">
+            <div class="container">
+                <p>935782916/951927798</p>
+                <p>info@g-daw.com</p>
+                <p>Seg-Sáb 9:00-19:00</p>
+                <div class="social">
+                    <a href="#" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><img src="{% static 'Images/youtube-logotype.png' %}" alt=""></i></a>
+                </div>
+            </div>
+        </header>
+        <!-- Menu de Navegação -->
+        <header>
+            <div class="hide" id="searchBar">
+                <input type="search" name="searchBox" id="searchBox" placeholder="Digite sua busca aqui...    Pressione [Esc] para sair">
+            </div>
+            <div class="container">  
+                <h1>
+                    <span>GD</span>AW 
+                    <p>Serviços e Soluções LDA</p>
+                </h1>
+                <label for="menu"><i class="fas fa-bars"></i></label>
+                <input type="checkbox" id="menu">
+                <nav>
+                    <a href="home.html" class="active">Início</a>
+                    <a href="sobre.html">Sobre Nós</a>
+                    <a href="servicos.html">Serviços</a>
+                    <a href="portfolio.html">Portfólio</a>
+                    <a href="projetos.html">Projetos</a>
+                    <a href="contato.html">Contato</a>
+                    <i class="fa-solid fa-magnifying-glass" id="search"></i>
+                </nav>
+            </div>
+        </header>
+        <!-- Banner Principal -->
+        <article>
+        <div class="container">
+            <h1>Profissionais Qualificados</h1>
+            <h2>Serviços de Construção<br>
+            <span>CRIATIVOS E PROFISSIONAIS</span></h2>
+            <p>A GDAW é uma empresa angolana que atua no setor de construção civil e prestação de serviços gerais. Focada em atender empresas e clientes particulares, a GDAW oferece desde pequenos reparos e serviços de manutenção até a execução de grandes projetos de construção.</p>
+            <a href="sobre.html">Saiba Mais</a>
+            <a href="portfolio.html">Ver Projetos</a>
+        </div>
+        </article>
+    </section>
+
+    <!-- Seção Sobre Nós -->
+    <section id="sec-1">
+        <div class="container">
+            <article>
+                <h1>Bem-vindo à GDAW</h1>
+                <h2>Transformamos ideias em realidade</h2>
+                <p>O principal objetivo da GDAW é fornecer soluções completas e de alta qualidade nas áreas de construção civil e serviços gerais, atendendo às necessidades de clientes corporativos e individuais. A empresa visa realizar projetos com excelência, garantindo a satisfação dos clientes, enquanto mantém um compromisso com a sustentabilidade e inovação.<br><br>Nossa empresa se destaca pelo uso de tecnologias modernas, profissionais qualificados e uma abordagem sustentável, com o compromisso de entregar serviços personalizados e com alto padrão de qualidade.</p>
+                <a href="sobre.html">Saiba Mais</a>
+            </article>
+            <aside><img src="{% static 'Images/img1.png' %}" alt="profissional"></aside>
+        </div>
+    </section>
+
+    <!-- Seção Por que Escolher GDAW -->
+    <section id="sec-2">
+        <div class="container">
+            <h1>Por que escolher a GDAW?</h1>
+            <P>Nossa empresa contribui para o crescimento do setor e o desenvolvimento das comunidades em que atua. Temos compromisso com a excelência e a satisfação de nossos clientes, com foco em soluções inovadoras e sustentáveis.</P>
+            <article>
+                <figure>
+                    <div><img src="{% static 'Images/ico1.png' %}" alt=""></div>
+                    <div class="cont">
+                        <h2>Excelência em Qualidade</h2>
+                        <p>Compromisso com a entrega de serviços de alta qualidade em cada projeto, utilizando materiais e técnicas de primeira linha.</p>
+                    </div>
+                </figure>
+                <figure>
+                    <div><img src="{% static 'Images/ico2.png' %}" alt=""></div>
+                    <div class="cont">
+                        <h2>Pontualidade Garantida</h2>
+                        <p>Cumprimos prazos rigorosamente, garantindo a conclusão de todos os projetos dentro do cronograma estabelecido com o cliente.</p>
+                    </div>
+                </figure>
+                <figure>
+                    <div><img src="{% static 'Images/ico3.png' %}" alt=""></div>
+                    <div class="cont">
+                        <h2>Paixão pelo que fazemos</h2>
+                        <p>Trabalhamos com dedicação e entusiasmo, transformando cada projeto em uma oportunidade de demonstrar nossa excelência.</p>
+                    </div>
+                </figure>
+                <figure>
+                    <div><img src="{% static 'Images/ico4.png' %}" alt=""></div>
+                    <div class="cont">
+                        <h2>Serviços profissionais</h2>
+                        <p>Equipe de profissionais especializados que garantem a execução de serviços com qualidade técnica superior e acabamento impecável.</p>
+                    </div>
+                </figure>
+            </article>
+        </div>
+    </section>
+
+    <!-- Seção Nossos Serviços -->
+    <section id="sec-3">
+        <div class="container">
+            <h1>Nossos Serviços</h1>
+            <div class="cont">
+                <div class="card border-0">
+                    <div>
+                        <img src="{% static 'Images/card1.jpg' %}" class="card-img-top" alt="...">
+                        <h5 class="caption">Gestão de Construção</h5>
+                    </div>
+                    <div class="card-body px-0 pt-4">
+                        <p>Oferecemos serviços completos de gestão de projetos de construção, desde o planejamento inicial até a entrega final. Nossa equipe de profissionais qualificados garante que cada etapa do projeto seja executada com precisão e qualidade, respeitando prazos e orçamentos.</p>
+                    <a href="servicos.html">Saiba Mais</a>
+                    </div>
+                </div>
+                <div class="card border-0">
+                    <div>
+                        <img src="{% static 'Images/card2.jpg' %}" class="card-img-top" alt="...">
+                        <h5 class="caption">Reformas</h5>
+                    </div>
+                    <div class="card-body px-0 pt-4">
+                        <p>Especializados em projetos de renovação e reforma para espaços residenciais e comerciais. Nossos serviços incluem desde pequenas reformas até remodelações completas de ambientes, utilizando materiais de primeira linha e técnicas inovadoras.</p>
+                    <a href="servicos.html">Saiba Mais</a>
+                    </div>
+                </div>
+                <div class="card border-0">
+                    <div>
+                        <img src="{% static 'Images/card3.jpg' %}" class="card-img-top" alt="...">
+                        <h5 class="caption">Arquitetura</h5>
+                    </div>
+                    <div class="card-body px-0 pt-4">
+                        <p>Contamos com uma equipe de arquitetos talentosos e experientes que desenvolvem projetos arquitetônicos inovadores e funcionais. Desde a concepção inicial até os detalhes finais, nossos profissionais trabalham em estreita colaboração com os clientes.</p>
+                    <a href="servicos.html">Saiba Mais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Portfólio -->
+    <section id="sec-4">
+        <div class="container">
+            <h1>Nosso Portfólio</h1>
+            <p>Conheça alguns dos nossos principais projetos. Na GDAW, cada obra é executada com dedicação e excelência técnica, refletindo nosso compromisso com a qualidade e a satisfação do cliente. Nossa galeria demonstra a diversidade e o alcance dos nossos serviços em diferentes setores.</p>
+            <div class="filter">
+                <a href="#" class="active">Todos</a>
+                <a href="#">Construções</a>
+                <a href="#">Design de Interiores</a>
+                <a href="#">Isolamento</a>
+                <a href="#">Instalações</a>
+            </div>
+            <div class="cont">
+                <img class="wow animated fadeIn slow" src="{% static 'Images/gallery1.jpg' %}" alt="projeto">
+                <aside>
+                    <img src="{% static 'Images/gallery3.jpg' %}" alt="projeto" class="wow animated flipInX delay-1s">
+                    <img src="{% static 'Images/gallery2.jpg' %}" alt="projeto" class="wow animated flipInX delay-1s slower">
+                    <img src="{% static 'Images/gallery4.jpg' %}" alt="projeto" class="wow animated flipInX delay-2s">
+                    <img src="{% static 'Images/gallery5.jpg' %}" alt="projeto" class="wow animated flipInX delay-2s slower">
+                </aside>    
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Depoimentos e Contato Rápido -->
+    <section id="sec-5">
+        <div class="container">
+            <h1>Avaliações de Clientes</h1>
+            <p>Descubra o que nossos clientes dizem sobre nossos serviços. Na GDAW, valorizamos o feedback de cada cliente e nos esforçamos continuamente para superar as expectativas em todos os projetos que realizamos.</p>
+            <div class="cont">
+                <article class="quoteblock">
+                    <div class="quotetxt arrow">
+                        <p><img src="{% static 'Images/blockquote2.png' %}" alt="quote mark"></p>
+                        <p>A equipe da GDAW superou todas as nossas expectativas. O projeto foi entregue no prazo, dentro do orçamento e com um acabamento impecável. A comunicação durante todo o processo foi excelente, e eles ofereceram soluções criativas para cada desafio que surgiu.</p>
+                    </div>
+                    <figure>
+                        <img class="customer" src="{% static 'Images/cust1.png' %}" alt="cliente1">
+                        <figcaption>Carlos Santos</figcaption>
+                    </figure>
+                </article>
+                <article class="quoteblock">
+                    <div class="quotetxt arrow">
+                        <p><img src="{% static 'Images/blockquote1.png' %}" alt="quote mark"></p>
+                        <p>Contratamos a GDAW para a reforma completa do nosso escritório, e o resultado foi extraordinário. A atenção aos detalhes e o compromisso com a qualidade são evidentes em cada aspecto do trabalho. Recomendamos fortemente seus serviços.</p>
+                    </div>
+                    <figure>
+                        <img class="customer" src="{% static 'Images/cust1.png' %}" alt="cliente1">
+                        <figcaption>Maria Fernandes</figcaption>
+                    </figure>
+                </article>
+                <article class="quoteblock">
+                    <div class="quotetxt arrow">
+                        <p><img src="{% static 'Images/blockquote2.png' %}" alt="quote mark"></p>
+                        <p>A abordagem inovadora e sustentável da GDAW fez toda a diferença em nosso projeto de construção. Sua equipe demonstrou profissionalismo excepcional e uma verdadeira paixão pelo trabalho. O resultado final superou nossas expectativas.</p>
+                    </div>
+                    <figure>
+                        <img class="customer" src="{% static 'Images/cust1.png' %}" alt="cliente1">
+                        <figcaption>Pedro Oliveira</figcaption>
+                    </figure>
+                </article>
+            </div>
+        </div>
+        <!-- Formulário de Contato Rápido -->
+        <div class="contactUs">
+            <div class="container">
+                <aside>
+                    <h1>Tem alguma dúvida?</h1>
+                    <h2>Entre em contato conosco!</h2>
+                </aside>
+                <form id="form" action="/" method="">
+                    <input type="text" name="name" id="" placeholder="Nome" required>
+                    <input type="email" name="email" id="email" placeholder="Email" required>
+                    <input type="text" name="message" id="" placeholder="Mensagem" required>
+                    <input type="submit" value="Enviar" id="submit">
+                    <p id="msg"></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé com Informações da Empresa -->
+    <section id="sec-6">
+        <div class="container">
+            <div class="about">
+                <h1>Sobre a Empresa</h1>
+                <h2>
+                    GDAW 
+                    <p>Serviços e Soluções LDA</p>
+                </h2>
+                <p>A GDAW é uma empresa angolana que atua no setor de construção civil e prestação de serviços gerais, comprometida com a excelência, inovação e sustentabilidade em todos os projetos que realizamos.</p>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>  
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube-square"></i></a>
+            </div>
+            <div class="links">
+                <h1>Links Úteis</h1>
+                <a href="{% url 'inicio' %}">Início</a>
+                <a href="{% url 'sobre' %}">Sobre Nós</a>
+                <a href="{% url 'servicos' %}" class="active">Serviços</a>
+                <a href="{% url 'portfolio' %}">Portfólio</a>
+                <a href="{% url 'projetos' %}">Projetos</a>
+                <a href="{% url 'contato' %}">Contato</a>
+                <a href="#">Política de Privacidade</a>
+                <a href="#">Termos de Uso</a>
+                <a href="#">Mapa do Site</a>
+            </div>
+            <div class="posts">
+                <h1>Últimas Publicações</h1>
+                <a href="#"><span>15<br>ABR</span>Inauguração de novo projeto residencial em Luanda</a>
+                <a href="#"><span>10<br>ABR</span>GDAW implementa práticas sustentáveis em novos projetos</a>
+                <a href="#"><span>05<br>ABR</span>Como escolher os melhores materiais para sua construção</a>
+                <a href="#"><span>01<br>ABR</span>Expansão dos serviços da GDAW para novas regiões</a>
+                <a href="#"><span>25<br>MAR</span>Tendências de arquitetura sustentável para 2025</a>
+            </div>
+            <div class="contact">
+                <h1>Contate-nos</h1>
+                <p>Luanda, Angola</p>
+                <p>info@g-daw.com / geral@g-daw.com</p>
+                <p>935782916<br>951927798</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Copyright -->
+    <section id="sec-7">
+        <div class="container">
+            <p>Copyright @2025 | Desenvolvido por <span>GDAW Serviços e Soluções LDA</span></p>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="{% static 'js/wow.min.js' %}"></script>
+    <script> new WOW().init();</script>
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+</body>
+</html>
